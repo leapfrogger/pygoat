@@ -15,6 +15,7 @@ Image:
 
 DockerBuild:
   name: pygoatbuild
+  affinityGroup: docker_group
   dockerImageName: pygoat
   dockerFileName: Dockerfile
   dockerFileLocation: '.'
@@ -22,6 +23,7 @@ DockerBuild:
 
 DockerPush:
   name: pygoatpush
+  affinityGroup: docker_group
   targetRepository: nitin-docker-local
   integrations:
     - name: nitin_artifactory
