@@ -1,0 +1,29 @@
+Pipeline:
+  name: pygoat
+
+GitRepo:
+  name: pygoat
+  gitProvider: github
+  path: leapfrogger/pygoat
+  branches:
+    include: 'master'
+
+artifactoryIntegration: nitin_artifactory
+
+Image:
+  name: pygoat
+  autoPull: false
+
+DockerBuild:
+  name: pygoatbuild
+  dockerImageName: pygoat
+  dockerFileName: Dockerfile
+  dockerFileLocation: '.'
+  dockerImageTag: ${run_number}
+
+DockerPush:
+  name: pygoatpush
+
+BuildInfo:
+  autoPublishBuildInfo: true
+  name: pygoatBuildInfo
