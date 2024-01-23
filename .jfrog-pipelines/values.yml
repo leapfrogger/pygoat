@@ -15,7 +15,7 @@ Image:
 
 DockerBuild:
   name: pygoatbuild
-  dockerImageName: leapfrogger/pygoat
+  dockerImageName: pygoat
   dockerFileName: Dockerfile
   dockerFileLocation: '.'
   dockerImageTag: ${run_number}
@@ -23,6 +23,8 @@ DockerBuild:
 DockerPush:
   name: pygoatpush
   targetRepository: nitin-docker-local
+  integrations:
+    -name: nitin_artifactory
 
 BuildInfo:
   autoPublishBuildInfo: true
