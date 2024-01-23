@@ -20,7 +20,7 @@ DockerBuild:
   affinityGroup: docker_group
   dockerImageName: "{{ .Values.artifactoryUrl }}/{{ .Values.Image.sourceRepository }}/{{ .Values.Image.imageName }}"
   dockerFileName: Dockerfile
-  dockerImageTag: ${run_number}
+  dockerImageTag: "${run_number}"
   dockerFileLocation: .
 
 DockerPush:
