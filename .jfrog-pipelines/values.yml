@@ -24,7 +24,9 @@ DockerPush:
   name: pygoatpush
   targetRepository: nitin-docker-local
   integrations:
-    -name: nitin_artifactory
+    - name: nitin_artifactory
+  inputSteps:
+    - name: pygoatbuild
 
 BuildInfo:
   autoPublishBuildInfo: true
