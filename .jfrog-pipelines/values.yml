@@ -10,6 +10,9 @@ GitRepo:
 
 artifactoryIntegration: nitin_artifactory
 
+Image:
+  sourceRepository: nitin-docker-local
+
 DockerBuild:
   name: pygoatbuild
   dockerImageName: pygoat
