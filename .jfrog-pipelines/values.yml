@@ -3,7 +3,7 @@ Pipeline:
 
 GitRepo:
   name: pygoat
-  gitProvider: github
+  gitProvider: nitin_github
   path: leapfrogger/pygoat
   branches:
     include: 'master'
