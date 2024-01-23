@@ -19,6 +19,7 @@ DockerBuild:
 
 DockerPush:
   name: pygoatpush
+  targetRepository: nitin-docker-local
 
 BuildInfo:
   autoPublishBuildInfo: true
