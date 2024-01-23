@@ -21,7 +21,7 @@ DockerBuild:
   dockerImageName: pipelines.soleng.jfrog.io/nitin-docker-local/pygoat
   dockerFileName: Dockerfile
   dockerFileLocation: '.'
-  dockerImageTag: '${run_number}'
+  dockerImageTag: ${run_number}
 
 DockerPush:
   name: pygoatpush
