@@ -11,6 +11,10 @@ GitRepo:
 artifactoryIntegration: nitin_artifactory
 artifactoryUrl: soleng.jfrog.io
 
+Image:
+  sourceRepository: nitin-docker-local
+  imageName: pygoat
+
 DockerBuild:
   name: pygoatbuild
   affinityGroup: docker_group
