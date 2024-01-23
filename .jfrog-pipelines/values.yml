@@ -20,8 +20,8 @@ DockerBuild:
   affinityGroup: docker_group
   dockerImageName: "{{ .Values.artifactoryUrl }}/{{ .Values.Image.sourceRepository }}/{{ .Values.Image.imageName }}"
   dockerFileName: Dockerfile
-  dockerImageTag: "${run_number}"
-  dockerFileLocation: .
+  dockerFileLocation: '.'
+  dockerImageTag: '${run_number}'
 
 DockerPush:
   name: pygoatpush
